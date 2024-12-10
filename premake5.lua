@@ -15,7 +15,10 @@ project "spdlog"
 
 	includedirs {
 		"include"
-	 }
+	}
+
+	filter "action:vs*"
+        buildoptions {"/utf-8"}
 
 	filter "system:windows"
 		systemversion "latest"
